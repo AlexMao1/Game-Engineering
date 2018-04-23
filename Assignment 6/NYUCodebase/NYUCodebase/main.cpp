@@ -309,7 +309,7 @@ void Update(GameState& state, float& elapsed, Mix_Chunk* someSound) {
 		state.first.velocity.y = -state.first.velocity.y;
 		state.second.velocity.x = -state.second.velocity.x;
 		state.second.velocity.y = -state.second.velocity.y;
-		//Mix_PlayChannel(-1, someSound, 0);
+		Mix_PlayChannel(-1, someSound, 0);
 	}
 	bool firColTrd = CheckSATCollision(firstPoints, thirdPoints, penetration);
 	if (firColTrd) {
@@ -321,7 +321,7 @@ void Update(GameState& state, float& elapsed, Mix_Chunk* someSound) {
 		state.first.velocity.y = -state.first.velocity.y;
 		state.third.velocity.x = -state.third.velocity.x;
 		state.third.velocity.y = -state.third.velocity.y;
-		//Mix_PlayChannel(-1, someSound, 0);
+		Mix_PlayChannel(-1, someSound, 0);
 	}
 	bool secColTrd = CheckSATCollision(secondPoints, thirdPoints, penetration);
 	if (secColTrd) {
@@ -333,7 +333,7 @@ void Update(GameState& state, float& elapsed, Mix_Chunk* someSound) {
 		state.second.velocity.y = -state.second.velocity.y;
 		state.third.velocity.x = -state.third.velocity.x;
 		state.third.velocity.y = -state.third.velocity.y;
-		//Mix_PlayChannel(-1, someSound, 0);
+		Mix_PlayChannel(-1, someSound, 0);
 	}
 }
 
