@@ -61,7 +61,7 @@ bool FlareMap::ReadLayerData(std::ifstream &stream) {
 				std::string tile;
 				for(int x=0; x < mapWidth; x++) {
 					std::getline(lineStream, tile, ',');
-					unsigned char val =  (unsigned char)atoi(tile.c_str());
+					int val =  atoi(tile.c_str());
 					if (val > 0) {
 						mapData[y][x] = val - 1;
 					}
@@ -108,6 +108,7 @@ void FlareMap::Load(const std::string& fileName) {
 	if(infile.fail()) {
 		assert(false); // unable to open file
 	}
+	entities.clear();
 	std::string line;
 	while (std::getline(infile, line)) {
 		if(line == "[header]" || line == "[header]\r") {

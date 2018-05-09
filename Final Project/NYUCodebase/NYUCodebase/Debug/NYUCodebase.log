@@ -1,2 +1,3 @@
 ﻿  main.cpp
+c:\users\alex mao\documents\github\cs3113\project_template\windows\nyucodebase\nyucodebase\main.cpp(262): warning C4715: 'Entity::shoot': not all control paths return a value
   NYUCodebase.vcxproj -> C:\Users\Alex Mao\Documents\GitHub\CS3113\project_template\Windows\NYUCodebase\Debug\NYUCodebase.exe
